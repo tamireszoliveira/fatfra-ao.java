@@ -8,10 +8,13 @@ public class FatfraçaoController {
 	    }
 	  
 public double recursiva(int n, int atual, double soma) {
+	
+	// a condição de parada se dá quando a variável "atual" for maior que a "n"
 		if(atual > n) {
 			return soma;
 		}
 		else {
+			//somando 1 / chamada da funçao fatorial passando a variável atual
 			soma += 1.0/ fat(atual);
 			
 			return recursiva(n, atual + 1, soma);
